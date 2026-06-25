@@ -1,0 +1,21 @@
+{
+  "blocks": [
+    {"name": "subject", "type": "text"},
+    {"name": "html", "type": "html"},
+    {"name": "text", "type": "text"}
+  ],
+  "variables": {
+    "orderNumber": {"type": "string"},
+    "customer": {
+      "type": "object",
+      "fields": {
+        "firstName": {"type": "string"}
+      }
+    },
+    "carrier": {"type": "string"},
+    "trackingCode": {"type": "string"},
+    "trackingUrl": {"type": "string"},
+    "estimatedDelivery": {"type": "date"},
+    "supportEmail": {"type": "string"}
+  }
+}

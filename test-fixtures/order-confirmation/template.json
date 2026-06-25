@@ -1,0 +1,42 @@
+{
+  "blocks": [
+    {"name": "subject", "type": "text"},
+    {"name": "html", "type": "html"},
+    {"name": "text", "type": "text"}
+  ],
+  "variables": {
+    "orderNumber": {"type": "string"},
+    "orderDate": {"type": "datetime"},
+    "status": {"type": "enum", "values": ["pending", "processing", "shipped", "delivered", "cancelled"]},
+    "customer": {
+      "type": "object",
+      "fields": {
+        "firstName": {"type": "string"},
+        "lastName": {"type": "string"},
+        "email": {"type": "string"}
+      }
+    },
+    "shippingAddress": {
+      "type": "object",
+      "fields": {
+        "street": {"type": "string"},
+        "city": {"type": "string"},
+        "postalCode": {"type": "string"},
+        "country": {"type": "string"}
+      }
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "fields": {
+          "name": {"type": "string"},
+          "quantity": {"type": "number"},
+          "unitPrice": {"type": "number"}
+        }
+      }
+    },
+    "totalAmount": {"type": "number"},
+    "currency": {"type": "string"}
+  }
+}

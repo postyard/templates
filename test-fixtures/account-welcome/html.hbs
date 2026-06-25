@@ -1,0 +1,10 @@
+<h1>{{{{translate this id="greeting"}}}}Hello {{user.firstName}} {{user.lastName}},{{{{/translate}}}}</h1>
+<p>{{{{translate this id="intro"}}}}Your {{accountType}} account has been created successfully.{{{{/translate}}}}</p>
+<h2>{{{{translate this id="features.header"}}}}Your plan includes:{{{{/translate}}}}</h2>
+<ul>
+{{#each features}}  <li>{{this}}</li>
+{{/each}}</ul>
+{{#if marketingEmails}}<p>{{{{translate this id="marketing.on"}}}}You will receive updates and offers by email.{{{{/translate}}}}</p>
+{{else}}<p>{{{{translate this id="marketing.off"}}}}You have opted out of marketing emails.{{{{/translate}}}}</p>
+{{/if}}<p><strong>{{{{translate this id="closing"}}}}Welcome aboard!{{{{/translate}}}}</strong></p>
+<p><small>{{{{translate this id="footer"}}}}You registered with {{user.email}}.{{{{/translate}}}}</small></p>

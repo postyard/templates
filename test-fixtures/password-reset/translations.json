@@ -1,0 +1,29 @@
+{
+  "en_US": {
+    "subject": "Reset your password",
+    "greeting": "Hi {{user.firstName}},",
+    "intro": "We received a request to reset the password for your account ({{user.email}}).",
+    "action": "Click the button below to choose a new password. This link expires in {{expiresInMinutes}} minutes.",
+    "button": "Reset password",
+    "ignore": "If you did not request a password reset, you can safely ignore this email.",
+    "footer": "For security reasons, this link is only valid once."
+  },
+  "nl_NL": {
+    "subject": "Wachtwoord opnieuw instellen",
+    "greeting": "Hoi {{user.firstName}},",
+    "intro": "We hebben een verzoek ontvangen om het wachtwoord van uw account ({{user.email}}) opnieuw in te stellen.",
+    "action": "Klik op de knop hieronder om een nieuw wachtwoord te kiezen. Deze link verloopt over {{expiresInMinutes}} minuten.",
+    "button": "Wachtwoord opnieuw instellen",
+    "ignore": "Als u geen wachtwoord reset heeft aangevraagd, kunt u deze e-mail negeren.",
+    "footer": "Om veiligheidsredenen is deze link slechts eenmalig geldig."
+  },
+  "de_DE": {
+    "subject": "Passwort zurücksetzen",
+    "greeting": "Hallo {{user.firstName}},",
+    "intro": "Wir haben eine Anfrage zum Zurücksetzen des Passworts für Ihr Konto ({{user.email}}) erhalten.",
+    "action": "Klicken Sie auf die Schaltfläche unten, um ein neues Passwort zu wählen. Dieser Link läuft in {{expiresInMinutes}} Minuten ab.",
+    "button": "Passwort zurücksetzen",
+    "ignore": "Wenn Sie keine Passwortzurücksetzung angefordert haben, können Sie diese E-Mail ignorieren.",
+    "footer": "Aus Sicherheitsgründen ist dieser Link nur einmalig gültig."
+  }
+}

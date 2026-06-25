@@ -1,0 +1,50 @@
+{
+  "en_US": {
+    "subject": "Order confirmation #{{orderNumber}}",
+    "greeting": "Dear {{customer.firstName}} {{customer.lastName}},",
+    "intro": "Thank you for your order! Here is a summary.",
+    "items.header": "Items ordered",
+    "items.unit": "Unit price",
+    "items.qty": "Qty",
+    "shipping.header": "Shipping address",
+    "total": "Total",
+    "status.label": "Order status",
+    "footer": "If you have any questions, please contact our support team."
+  },
+  "nl_NL": {
+    "subject": "Orderbevestiging #{{orderNumber}}",
+    "greeting": "Beste {{customer.firstName}} {{customer.lastName}},",
+    "intro": "Bedankt voor uw bestelling! Hieronder vindt u een overzicht.",
+    "items.header": "Bestelde artikelen",
+    "items.unit": "Stukprijs",
+    "items.qty": "Aantal",
+    "shipping.header": "Verzendadres",
+    "total": "Totaal",
+    "status.label": "Bestelstatus",
+    "footer": "Heeft u vragen? Neem dan contact op met onze klantenservice."
+  },
+  "nl_BE": {
+    "subject": "Orderbevestiging #{{orderNumber}}",
+    "greeting": "Beste {{customer.firstName}} {{customer.lastName}},",
+    "intro": "Bedankt voor uw bestelling! Hieronder vindt u een overzicht.",
+    "items.header": "Bestelde artikelen",
+    "items.unit": "Eenheidsprijs",
+    "items.qty": "Aantal",
+    "shipping.header": "Leveringsadres",
+    "total": "Totaal",
+    "status.label": "Bestelstatus",
+    "footer": "Heeft u vragen? Aarzel dan niet om contact op te nemen met onze klantendienst."
+  },
+  "de_DE": {
+    "subject": "Bestellbestätigung #{{orderNumber}}",
+    "greeting": "Sehr geehrte/r {{customer.firstName}} {{customer.lastName}},",
+    "intro": "Vielen Dank für Ihre Bestellung! Hier ist eine Zusammenfassung.",
+    "items.header": "Bestellte Artikel",
+    "items.unit": "Einzelpreis",
+    "items.qty": "Menge",
+    "shipping.header": "Lieferadresse",
+    "total": "Gesamtbetrag",
+    "status.label": "Bestellstatus",
+    "footer": "Bei Fragen wenden Sie sich bitte an unser Support-Team."
+  }
+}

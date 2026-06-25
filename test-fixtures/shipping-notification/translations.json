@@ -1,0 +1,35 @@
+{
+  "en_US": {
+    "subject": "Your order #{{orderNumber}} is on its way!",
+    "greeting": "Hi {{customer.firstName}},",
+    "intro": "Great news — your order has been shipped.",
+    "tracking.info": "Your package is being delivered by {{carrier}}. Your tracking code is {{trackingCode}}.",
+    "tracking.cta": "Track your package",
+    "delivery.estimate": "Estimated delivery: {{estimatedDelivery}}",
+    "support.html": "Questions? Contact us at <a href=\"mailto:{{supportEmail}}\">{{supportEmail}}</a>.",
+    "support.text": "Questions? Contact us at {{supportEmail}}.",
+    "legal": "You received this email because you have an account with us."
+  },
+  "nl_NL": {
+    "subject": "Je bestelling #{{orderNumber}} is onderweg!",
+    "greeting": "Hoi {{customer.firstName}},",
+    "intro": "Goed nieuws — je bestelling is verzonden.",
+    "tracking.info": "Je pakket wordt bezorgd door {{carrier}}. Je trackingcode is {{trackingCode}}.",
+    "tracking.cta": "Volg je pakket",
+    "delivery.estimate": "Verwachte levering: {{estimatedDelivery}}",
+    "support.html": "Vragen? Neem contact op via <a href=\"mailto:{{supportEmail}}\">{{supportEmail}}</a>.",
+    "support.text": "Vragen? Neem contact op via {{supportEmail}}.",
+    "legal": "U ontvangt deze e-mail omdat u een account bij ons heeft."
+  },
+  "de_DE": {
+    "subject": "Ihre Bestellung #{{orderNumber}} ist unterwegs!",
+    "greeting": "Hallo {{customer.firstName}},",
+    "intro": "Gute Neuigkeiten — Ihre Bestellung wurde versandt.",
+    "tracking.info": "Ihr Paket wird von {{carrier}} geliefert. Ihre Sendungsnummer lautet {{trackingCode}}.",
+    "tracking.cta": "Paket verfolgen",
+    "delivery.estimate": "Voraussichtliche Lieferung: {{estimatedDelivery}}",
+    "support.html": "Fragen? Kontaktieren Sie uns unter <a href=\"mailto:{{supportEmail}}\">{{supportEmail}}</a>.",
+    "support.text": "Fragen? Kontaktieren Sie uns unter {{supportEmail}}.",
+    "legal": "Sie erhalten diese E-Mail, weil Sie ein Konto bei uns haben."
+  }
+}

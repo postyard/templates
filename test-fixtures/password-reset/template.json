@@ -1,0 +1,19 @@
+{
+  "blocks": [
+    {"name": "subject", "type": "text"},
+    {"name": "html", "type": "html"},
+    {"name": "text", "type": "text"}
+  ],
+  "variables": {
+    "user": {
+      "type": "object",
+      "fields": {
+        "firstName": {"type": "string"},
+        "email": {"type": "string"}
+      }
+    },
+    "resetUrl": {"type": "string"},
+    "expiresAt": {"type": "datetime"},
+    "expiresInMinutes": {"type": "number"}
+  }
+}

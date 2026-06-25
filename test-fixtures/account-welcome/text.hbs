@@ -1,0 +1,13 @@
+{{{{translate this id="greeting"}}}}Hello {{user.firstName}} {{user.lastName}},{{{{/translate}}}}
+
+{{{{translate this id="intro"}}}}Your {{accountType}} account has been created successfully.{{{{/translate}}}}
+
+{{{{translate this id="features.header"}}}}Your plan includes:{{{{/translate}}}}
+{{#each features}}- {{this}}
+{{/each}}
+{{#if marketingEmails}}{{{{translate this id="marketing.on"}}}}You will receive updates and offers by email.{{{{/translate}}}}
+{{else}}{{{{translate this id="marketing.off"}}}}You have opted out of marketing emails.{{{{/translate}}}}
+{{/if}}
+{{{{translate this id="closing"}}}}Welcome aboard!{{{{/translate}}}}
+
+{{{{translate this id="footer"}}}}You registered with {{user.email}}.{{{{/translate}}}}

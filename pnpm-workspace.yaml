@@ -1,0 +1,6 @@
+packages:
+  - library-typescript
+
+allowBuilds:
+  esbuild: true
+  nx: true

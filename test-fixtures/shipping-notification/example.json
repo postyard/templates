@@ -1,0 +1,11 @@
+{
+  "orderNumber": "ORD-2024-001234",
+  "customer": {
+    "firstName": "Jan"
+  },
+  "carrier": "PostNL",
+  "trackingCode": "3SYZICK123456789",
+  "trackingUrl": "https://track.postnl.nl/3SYZICK123456789",
+  "estimatedDelivery": "2024-03-18",
+  "supportEmail": "support@example.com"
+}

@@ -1,0 +1,8 @@
+{
+  "blocks": [
+    {"name": "text", "type": "text"}
+  ],
+  "variables": {
+    "name": {"type": "string"}
+  }
+}

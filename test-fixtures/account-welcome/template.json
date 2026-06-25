@@ -1,0 +1,24 @@
+{
+  "blocks": [
+    {"name": "subject", "type": "text"},
+    {"name": "html", "type": "html"},
+    {"name": "text", "type": "text"}
+  ],
+  "variables": {
+    "user": {
+      "type": "object",
+      "fields": {
+        "firstName": {"type": "string"},
+        "lastName": {"type": "string"},
+        "email": {"type": "string"}
+      }
+    },
+    "accountType": {"type": "enum", "values": ["personal", "business", "premium"]},
+    "marketingEmails": {"type": "boolean"},
+    "registeredAt": {"type": "datetime"},
+    "features": {
+      "type": "array",
+      "items": {"type": "string"}
+    }
+  }
+}

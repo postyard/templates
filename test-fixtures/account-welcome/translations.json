@@ -1,0 +1,42 @@
+{
+  "en_US": {
+    "subject": "Welcome to the platform, {{user.firstName}}!",
+    "greeting": "Hello {{user.firstName}} {{user.lastName}},",
+    "intro": "Your {{accountType}} account has been created successfully.",
+    "features.header": "Your plan includes:",
+    "marketing.on": "You will receive updates and offers by email.",
+    "marketing.off": "You have opted out of marketing emails.",
+    "closing": "Welcome aboard!",
+    "footer": "You registered with {{user.email}}."
+  },
+  "nl_NL": {
+    "subject": "Welkom op het platform, {{user.firstName}}!",
+    "greeting": "Hallo {{user.firstName}} {{user.lastName}},",
+    "intro": "Uw {{accountType}}-account is succesvol aangemaakt.",
+    "features.header": "Uw abonnement bevat:",
+    "marketing.on": "U ontvangt updates en aanbiedingen per e-mail.",
+    "marketing.off": "U heeft zich afgemeld voor marketingmails.",
+    "closing": "Welkom aan boord!",
+    "footer": "U bent geregistreerd met {{user.email}}."
+  },
+  "nl_BE": {
+    "subject": "Welkom op het platform, {{user.firstName}}!",
+    "greeting": "Hallo {{user.firstName}} {{user.lastName}},",
+    "intro": "Uw {{accountType}}-account werd succesvol aangemaakt.",
+    "features.header": "Uw abonnement omvat:",
+    "marketing.on": "U ontvangt updates en aanbiedingen via e-mail.",
+    "marketing.off": "U heeft zich uitgeschreven voor marketingmails.",
+    "closing": "Welkom aan boord!",
+    "footer": "U bent geregistreerd met {{user.email}}."
+  },
+  "de_DE": {
+    "subject": "Willkommen auf der Plattform, {{user.firstName}}!",
+    "greeting": "Hallo {{user.firstName}} {{user.lastName}},",
+    "intro": "Ihr {{accountType}}-Konto wurde erfolgreich erstellt.",
+    "features.header": "Ihr Tarif umfasst:",
+    "marketing.on": "Sie erhalten Updates und Angebote per E-Mail.",
+    "marketing.off": "Sie haben Marketing-E-Mails abbestellt.",
+    "closing": "Herzlich willkommen!",
+    "footer": "Sie haben sich mit {{user.email}} registriert."
+  }
+}

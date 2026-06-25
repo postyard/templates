@@ -1,0 +1,14 @@
+Hi Jan,
+
+Great news — your order has been shipped.
+
+Your package is being delivered by PostNL. Your tracking code is 3SYZICK123456789.
+
+Track your package: https://track.postnl.nl/3SYZICK123456789
+
+Estimated delivery: 2024-03-18
+
+---
+Questions? Contact us at support@example.com.
+
+You received this email because you have an account with us.

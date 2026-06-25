@@ -1,0 +1,68 @@
+{
+  "name": "library-java",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "library-java/lib/src",
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "./gradlew :lib:jar",
+        "cwd": "{projectRoot}"
+      },
+      "inputs": [
+        "{projectRoot}/lib/src/**/*",
+        "{projectRoot}/lib/build.gradle.kts",
+        "{projectRoot}/settings.gradle.kts"
+      ],
+      "outputs": ["{projectRoot}/lib/build/libs"]
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "./gradlew :lib:test",
+        "cwd": "{projectRoot}"
+      },
+      "inputs": [
+        "{projectRoot}/lib/src/**/*",
+        "{projectRoot}/lib/build.gradle.kts",
+        "{projectRoot}/settings.gradle.kts",
+        "sharedFixtures"
+      ],
+      "outputs": ["{projectRoot}/lib/build/reports/tests"]
+    },
+    "docs": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "./gradlew :lib:javadoc",
+        "cwd": "{projectRoot}"
+      },
+      "inputs": [
+        "{projectRoot}/lib/src/main/**/*",
+        "{projectRoot}/lib/build.gradle.kts",
+        "{projectRoot}/settings.gradle.kts"
+      ],
+      "outputs": ["{projectRoot}/lib/build/docs/javadoc"]
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "./gradlew :lib:spotlessCheck",
+        "cwd": "{projectRoot}"
+      },
+      "inputs": [
+        "{projectRoot}/lib/src/**/*",
+        "{projectRoot}/lib/build.gradle.kts",
+        "{projectRoot}/settings.gradle.kts"
+      ]
+    },
+    "format": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "./gradlew :lib:spotlessApply",
+        "cwd": "{projectRoot}"
+      },
+      "cache": false
+    }
+  }
+}

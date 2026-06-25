@@ -1,0 +1,22 @@
+{
+  "orderNumber": "ORD-2024-001234",
+  "orderDate": "2024-03-15T14:32:00+01:00",
+  "status": "processing",
+  "customer": {
+    "firstName": "Jan",
+    "lastName": "de Vries",
+    "email": "jan.devries@example.com"
+  },
+  "shippingAddress": {
+    "street": "Keizersgracht 123",
+    "city": "Amsterdam",
+    "postalCode": "1015 CJ",
+    "country": "Netherlands"
+  },
+  "items": [
+    {"name": "Wireless Headphones", "quantity": 1, "unitPrice": 79.99},
+    {"name": "USB-C Cable", "quantity": 2, "unitPrice": 9.99}
+  ],
+  "totalAmount": 99.97,
+  "currency": "EUR"
+}

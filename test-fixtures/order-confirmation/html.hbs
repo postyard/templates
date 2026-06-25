@@ -1,0 +1,35 @@
+<h1>{{{{translate this id="greeting"}}}}Dear {{customer.firstName}} {{customer.lastName}},{{{{/translate}}}}</h1>
+<p>{{{{translate this id="intro"}}}}Thank you for your order! Here is a summary.{{{{/translate}}}}</p>
+<p><strong>{{{{translate this id="status.label"}}}}Order status{{{{/translate}}}}:</strong> {{status}}</p>
+<h2>{{{{translate this id="items.header"}}}}Items ordered{{{{/translate}}}}</h2>
+<table>
+  <thead>
+    <tr>
+      <th>{{{{translate this id="items.header"}}}}Items ordered{{{{/translate}}}}</th>
+      <th>{{{{translate this id="items.qty"}}}}Qty{{{{/translate}}}}</th>
+      <th>{{{{translate this id="items.unit"}}}}Unit price{{{{/translate}}}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each items}}
+    <tr>
+      <td>{{name}}</td>
+      <td>{{quantity}}</td>
+      <td>{{../currency}} {{unitPrice}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="2"><strong>{{{{translate this id="total"}}}}Total{{{{/translate}}}}</strong></td>
+      <td><strong>{{currency}} {{totalAmount}}</strong></td>
+    </tr>
+  </tfoot>
+</table>
+<h2>{{{{translate this id="shipping.header"}}}}Shipping address{{{{/translate}}}}</h2>
+<address>
+  {{shippingAddress.street}}<br>
+  {{shippingAddress.postalCode}} {{shippingAddress.city}}<br>
+  {{shippingAddress.country}}
+</address>
+<p>{{{{translate this id="footer"}}}}If you have any questions, please contact our support team.{{{{/translate}}}}</p>

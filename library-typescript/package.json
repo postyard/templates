@@ -1,0 +1,67 @@
+{
+  "name": "@postyard/templates",
+  "version": "0.1.0",
+  "description": "Handlebars-based, multi-locale email & message templating with typed variables and per-locale translations.",
+  "keywords": [
+    "handlebars",
+    "template",
+    "templating",
+    "email",
+    "i18n",
+    "localization",
+    "translations",
+    "transactional-email",
+    "mustache"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/postyard/templates/tree/main/library-typescript#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/postyard/templates.git",
+    "directory": "library-typescript"
+  },
+  "bugs": {
+    "url": "https://github.com/postyard/templates/issues"
+  },
+  "type": "module",
+  "packageManager": "pnpm@11.8.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "!dist/**/*.test.*",
+    "!dist/**/*.spec.*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "docs": "typedoc",
+    "prepublishOnly": "pnpm build"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "dependencies": {
+    "handlebars": "^4.7.8",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.1",
+    "@types/node": "^26.0.0",
+    "typedoc": "^0.28.19",
+    "typescript": "^6.0.0",
+    "vite": "^6.0.0",
+    "vitest": "^4.0.0"
+  }
+}

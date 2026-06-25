@@ -1,0 +1,11 @@
+{
+  "user": {
+    "firstName": "Maria",
+    "lastName": "Schmidt",
+    "email": "maria.schmidt@example.com"
+  },
+  "accountType": "premium",
+  "marketingEmails": true,
+  "registeredAt": "2024-03-15T09:00:00+01:00",
+  "features": ["Unlimited storage", "Priority support", "Advanced analytics"]
+}

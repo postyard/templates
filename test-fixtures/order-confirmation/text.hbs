@@ -1,0 +1,17 @@
+{{{{translate this id="greeting"}}}}Dear {{customer.firstName}} {{customer.lastName}},{{{{/translate}}}}
+
+{{{{translate this id="intro"}}}}Thank you for your order! Here is a summary.{{{{/translate}}}}
+
+{{{{translate this id="status.label"}}}}Order status{{{{/translate}}}}: {{status}}
+
+{{{{translate this id="items.header"}}}}Items ordered{{{{/translate}}}}
+{{#each items}}- {{name}} x{{quantity}} @ {{../currency}} {{unitPrice}}
+{{/each}}
+{{{{translate this id="total"}}}}Total{{{{/translate}}}}: {{currency}} {{totalAmount}}
+
+{{{{translate this id="shipping.header"}}}}Shipping address{{{{/translate}}}}
+{{shippingAddress.street}}
+{{shippingAddress.postalCode}} {{shippingAddress.city}}
+{{shippingAddress.country}}
+
+{{{{translate this id="footer"}}}}If you have any questions, please contact our support team.{{{{/translate}}}}

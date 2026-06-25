@@ -1,0 +1,10 @@
+{
+  "blocks": [
+    {"name": "subject", "type": "text"},
+    {"name": "html", "type": "html"},
+    {"name": "text", "type": "text"}
+  ],
+  "variables": {
+    "name": {"type": "string"}
+  }
+}
