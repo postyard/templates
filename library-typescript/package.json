@@ -1,6 +1,6 @@
 {
   "name": "@postyard/templates",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "Handlebars-based, multi-locale email & message templating with typed variables and per-locale translations.",
   "keywords": [
     "handlebars",
