@@ -1,5 +1,3 @@
-import com.vanniktech.maven.publish.SonatypeHost
-
 plugins {
     `java-library`
     id("com.diffplug.spotless") version "8.7.0"
@@ -42,7 +40,7 @@ tasks.named<Test>("test") {
 }
 
 mavenPublishing {
-    publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
+    publishToMavenCentral()
     signAllPublications()
 
     coordinates(group.toString(), "postyard-templates", version.toString())
