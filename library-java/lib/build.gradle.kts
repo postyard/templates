@@ -1,5 +1,6 @@
 plugins {
     `java-library`
+    jacoco
     id("com.diffplug.spotless") version "8.7.0"
     id("com.vanniktech.maven.publish") version "0.37.0"
 }
@@ -37,6 +38,14 @@ tasks.named<Test>("test") {
     useJUnitPlatform()
     val fixturesDir = rootProject.projectDir.parentFile.resolve("test-fixtures")
     systemProperty("postyard.fixtures.dir", fixturesDir.absolutePath)
+}
+
+tasks.jacocoTestReport {
+    dependsOn(tasks.test)
+    reports {
+        xml.required = true
+        html.required = false
+    }
 }
 
 mavenPublishing {
