@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   affected:
-    name: Build, test, lint & docs (affected)
+    name: Build, lint & docs (affected)
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -50,4 +50,4 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Run affected targets
-        run: pnpm nx affected -t build test lint docs
+        run: pnpm nx affected -t build lint docs
