@@ -46,6 +46,17 @@ jobs:
         working-directory: library-typescript
         run: npm publish
 
+      - name: Pack tarball
+        working-directory: library-typescript
+        run: npm pack
+
+      - name: Upload tarball
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: npm-tarball
+          path: library-typescript/*.tgz
+          if-no-files-found: error
+
   maven:
     name: Publish to Maven Central
     runs-on: ubuntu-latest
@@ -79,4 +90,29 @@ jobs:
           ./gradlew publishAndReleaseToMavenCentral \
             -PVERSION_NAME="$version" \
             --no-configuration-cache
+
+      - name: Upload jars
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: maven-jars
+          path: library-java/lib/build/libs/*.jar
+          if-no-files-found: error
+
+  github-release:
+    name: GitHub Release
+    needs: [npm, maven]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          path: artifacts
+
+      - name: Create release
+        uses: softprops/action-gh-release@718ea10b132b3b2eba29c1007bb80653f286566b # v3.0.1
+        with:
+          files: artifacts/**/*
+          generate_release_notes: true
 
