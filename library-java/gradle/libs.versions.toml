@@ -2,9 +2,9 @@
 # https://docs.gradle.org/current/userguide/platforms.html#sub::toml-dependencies-format
 
 [versions]
-handlebars = "4.5.2"
+handlebars = "4.5.3"
 jackson = "2.22.0"
-junit-jupiter = "6.1.0"
+junit-jupiter = "6.1.1"
 
 [libraries]
 handlebars = { module = "com.github.jknack:handlebars", version.ref = "handlebars" }
